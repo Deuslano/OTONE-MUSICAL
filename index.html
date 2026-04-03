@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>OTONE Musical | Música para Casamentos e Eventos</title>
+  <meta name="description" content="Música ao vivo para casamentos. Violino, piano, coral e banda completa. Orçamento personalizado. Atendimento em todo Brasil.">
+  
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;400;500;600;700;800&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  
+  <!-- AOS Animation Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <!-- CSS Principal -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="container header-flex">
+    <a href="#home" class="logo">
+      <div class="logo-icon">
+        <img src="./LOGO/LOGO DOURADA.png" alt="OTONE Musical Logo">
+      </div>
+      <div class="logo-text"><h1>MUSICAL OTONE</h1><p>MÚSICA QUE EMOCIONA</p></div>
+    </a>
+    <div class="menu-toggle" id="menuToggle"><i class="fas fa-bars"></i></div>
+    <div class="nav-links" id="navLinks">
+      <a href="#home">Início</a>
+      <a href="#portfolio">Portfólio</a>
+      <a href="#pacotes">Serviços</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+      <a href="https://www.instagram.com/musicalotone/" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </div>
+</header>
+
+<!-- Hero Section -->
+<section id="home" class="hero-split">
+  <video class="hero-video-bg" autoplay muted loop playsinline poster="https://placehold.co/1920x1080/2a2a2a/E4B863?text=OTONE">
+    <source src="./videos/YTDown.com_YouTube_Musical-OTone-Musica-para-casamento-casa_Media_xE0MDzY8i_s_001_1080p.mp4" type="video/mp4">
+  </video>
+  <div class="hero-overlay-bg"></div>
+  <div class="hero-left">
+    <div class="hero-tag">MÚSICA AO VIVO PARA CASAMENTOS</div>
+    <h2>Do clássico ao moderno: encontre as músicas perfeitas para seu casamento.</h2>
+    <div class="hero-buttons">
+      <a href="https://wa.me/553488754146?text=Olá! Quero um orçamento." target="_blank" class="btn-gold">Solicitar orçamento no WhatsApp</a>
+      <a href="#contato" class="btn-gold-outline">Quero suporte do maestro</a>
+    </div>
+  </div>
+</section>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/553488754146?text=Olá! Quero um orçamento." target="_blank" class="whatsapp-float">
+  <i class="fab fa-whatsapp"></i> <span>Fale conosco</span>
+</a>
+
+<!-- Música Ambiente -->
+<div id="musicControl" class="music-control">
+  <i id="musicIcon" class="fas fa-music"></i>
+  <span id="musicStatus">Música ambiente</span>
+</div>
+<audio id="bgMusic" loop preload="auto">
+  <source src="./musicas/Photograph.mp3" type="audio/mp3">
+</audio>
+
+<div class="container">
+  <div class="vagas-badge" data-aos="fade-up">
+    <i class="fas fa-calendar-alt"></i> 📅 Poucas vagas para 2026 — Garanta já a sua data!
+  </div>
+</div>
+
+<!-- Portfólio com YouTube -->
+<section id="portfolio">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Momentos que ganham vida com música</h2>
+    <p class="section-sub" data-aos="fade-up"></p>
+    <div class="moments-grid">
+      <div class="moment-card" data-aos="flip-left">
+        <iframe class="youtube-video" src="https://www.youtube.com/embed/D62LjjVmBYQ?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="moment-info"><h3>CASAL</h3><p>Duda & Nilo</p></div>
+      </div>
+      <div class="moment-card" data-aos="flip-left" data-aos-delay="100">
+        <iframe class="youtube-video" src="https://www.youtube.com/embed/xE0MDzY8i_s?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+        <div class="moment-info"><h3>CASAL</h3><p>Diessa & Bruno</p></div>
+      </div>
+      <div class="moment-card" data-aos="flip-left" data-aos-delay="200">
+        <iframe class="youtube-video" src="https://www.youtube.com/embed/zHtVC8j6YTA?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+        <div class="moment-info"><h3>CASAL</h3><p>Isa & Pedro </p></div>
+      </div>
+      <div class="moment-card" data-aos="flip-left" data-aos-delay="300">
+        <iframe class="youtube-video" src="https://www.youtube.com/embed/uf2QDrFdWRU?enablejsapi=1" frameborder="0" allowfullscreen></iframe>
+        <div class="moment-info"><h3>CASAL</h3><p> Lucas & Ana Júlia</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Depoimentos em Vídeo -->
+<section>
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Depoimentos</h2>
+    <p class="section-sub" data-aos="fade-up">Veja o que nossos clientes dizem sobre a OTONE Musical</p>
+    <div class="testimonials-grid">
+      <div class="testimonial-video" data-aos="zoom-in">
+        <video class="testimonial-video-player" controls poster="https://placehold.co/640x360/1f1d19/E4B863?text=Depoimento+1">
+          <source src="./COMENTARIOS/1.mp4" type="video/mp4">
+        </video>
+        <div class="testimonial-caption">— DJ MÔNICA E JEFHERSON</div>
+      </div>
+      <div class="testimonial-video" data-aos="zoom-in" data-aos-delay="100">
+        <video class="testimonial-video-player" controls poster="https://placehold.co/640x360/1f1d19/E4B863?text=Depoimento+2">
+          <source src="./COMENTARIOS/3.mp4" type="video/mp4">
+        </video>
+        <div class="testimonial-caption">— CARVALHO BRAZUCA E LUCIENE</div>
+      </div>
+      <div class="testimonial-video" data-aos="zoom-in" data-aos-delay="200">
+        <video class="testimonial-video-player" controls poster="https://placehold.co/640x360/1f1d19/E4B863?text=Depoimento+3">
+          <source src="./COMENTARIOS/4.mp4" type="video/mp4">
+        </video>
+        <div class="testimonial-caption">— FORMATURA PRIMEIRA TURMA DE PSICOLOGIA DA IMEPAC</div>
+      </div>
+      <div class="testimonial-video" data-aos="zoom-in" data-aos-delay="200">
+        <video class="testimonial-video-player" controls poster="https://placehold.co/640x360/1f1d19/E4B863?text=Depoimento+4">
+          <source src="./COMENTARIOS/5.mp4" type="video/mp4">
+        </video>
+        <div class="testimonial-caption">— DECORADORA ANA GODOI</div>
+      </div>
+      <div class="testimonial-video" data-aos="zoom-in" data-aos-delay="200">
+        <video class="testimonial-video-player" controls poster="https://placehold.co/640x360/1f1d19/E4B863?text=Depoimento+5">
+          <source src="./COMENTARIOS/7.mp4" type="video/mp4">
+        </video>
+        <div class="testimonial-caption">— RAIANE E DANILO</div>
+      </div>
+      <div class="testimonial-video" data-aos="zoom-in" data-aos-delay="200">
+        <video class="testimonial-video-player" controls poster="https://placehold.co/640x360/1f1d19/E4B863?text=Depoimento+6">
+          <source src="./COMENTARIOS/9.mp4" type="video/mp4">
+        </video>
+        <div class="testimonial-caption">— DIEGO E MARCIA</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Pacotes -->
+<section id="pacotes">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Escolha a formação perfeita</h2>
+    <div class="pricing-grid">
+      <div class="pricing-card" data-aos="fade-right"><h3>Solo</h3><div class="price">VIOLINO, PIANO OU VOZ</div><a href="#contato" class="btn-gold-outline">Orçamento</a></div>
+      <div class="pricing-card" data-aos="fade-up"><h3>Duo / Trio</h3><div class="price">Violino + violão + voz</div><a href="#contato" class="btn-gold-outline">Orçamento</a></div>
+      <div class="pricing-card" data-aos="fade-left"><h3>Banda Completa</h3><div class="price">Até 6 músicos</div><a href="#contato" class="btn-gold-outline">Orçamento</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- Sobre -->
+<section id="sobre">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Sobre O OTONE Musical</h2>
+    <div class="sobre-grid" data-aos="fade-up">
+      <div class="sobre-texto">
+        <p><strong>O Musical Otone</strong> nasceu com o propósito de transformar momentos especiais em experiências inesquecíveis através da música. Com sensibilidade, profissionalismo e um repertório cuidadosamente selecionado, buscamos traduzir sentimentos em cada nota executada.</p>
+        <p>Acreditamos que a música tem o poder de eternizar instantes. Por isso, cada apresentação é preparada com dedicação e atenção aos detalhes, criando a trilha sonora perfeita para casamentos, cerimônias e eventos marcantes.</p>
+        <p>Mais do que tocar, o Musical Otone se conecta com cada história, levando emoção, elegância e harmonia a cada ocasião. Nosso compromisso é proporcionar não apenas música, mas momentos que serão lembrados para sempre.</p>
+        <div class="diferenciais">
+          <div class="diferencial"><i class="fas fa-check-circle"></i> Mais de 4 anos de experiência</div>
+          <div class="diferencial"><i class="fas fa-check-circle"></i> Músicos formados em conservatório E FACULDADE DE MÚSICA</div>
+          <div class="diferencial"><i class="fas fa-check-circle"></i> Repertório 100% personalizado</div>
+        </div>
+        <a href="#contato" class="btn-gold" style="display:inline-block; margin-top:10px;">Fale com o maestro</a>
+      </div>
+      <div class="sobre-imagem">
+        <img src="./imagens/jhonny.png" alt="Maestro Rodrigo OTone">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Galeria -->
+<section>
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Galeria de momentos</h2>
+    <div class="gallery-grid">
+      <div class="gallery-item" data-aos="zoom-in"><img src="./imagens/Musical Otone em uma recepção encantadora, tornando o Aniversário de Édson ainda mais especial ✨ (1).jpg" alt="Casamento OTONE"></div>
+      <div class="gallery-item" data-aos="zoom-in" data-aos-delay="50"><img src="./imagens/Musical Otone em uma recepção encantadora, tornando o Aniversário de Édson ainda mais especial ✨ (2).jpg" alt="Casamento OTONE"></div>
+      <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100"><img src="./imagens/Musical Otone em uma recepção encantadora, tornando o Aniversário de Édson ainda mais especial ✨.jpg" alt="Músicos OTONE"></div>
+      <div class="gallery-item" data-aos="zoom-in" data-aos-delay="150"><img src="./imagens/Música que celebra conquistas!✨🙌🏿🎉O Musical Otone teve a alegria de participar de mais um dia.jpg" alt="Cerimônia OTONE"></div>
+      <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200"><img src="./imagens/Musical Otone 🎶✨.jpg" alt="Violino OTONE"></div>
+      <div class="gallery-item" data-aos="zoom-in" data-aos-delay="250"><img src="./imagens/2.jpg" alt="Festa OTONE"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Contato -->
+<section id="contato">
+  <div class="container">
+    <h2 class="section-title" data-aos="fade-up">Solicite seu orçamento</h2>
+    <div class="contact-form" data-aos="fade-up">
+      <form id="contactForm">
+        <input type="text" placeholder="Seu nome" required>
+        <input type="email" placeholder="E-mail" required>
+        <input type="tel" placeholder="WhatsApp" required>
+        <input type="date" placeholder="Data do casamento">
+        <input type="text" placeholder="Local da cerimônia">
+        <select><option>Religiosa</option><option>Civil</option><option>Ambos</option></select>
+        <textarea rows="3" placeholder="Mensagem..."></textarea>
+        <button type="submit">Enviar pelo WhatsApp <i class="fab fa-whatsapp"></i></button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="logo" style="justify-content: center; margin-bottom: 20px;">
+      <div class="logo-icon"><img src="./LOGO/LOGO DOURADA.png" alt="OTONE"></div>
+      <div class="logo-text"><h2 style="color:#E4B863;">MUSICAL OTONE</h2></div>
+    </div>
+    <p>Música que transforma momentos em eternas memórias.</p>
+    <div style="margin: 20px 0;">
+      <a href="#home" style="color:#d1c9b8; margin:0 10px;">Início</a>
+      <a href="#portfolio" style="color:#d1c9b8; margin:0 10px;">Portfólio</a>
+      <a href="#pacotes" style="color:#d1c9b8; margin:0 10px;">Serviços</a>
+      <a href="#sobre" style="color:#d1c9b8; margin:0 10px;">Sobre</a>
+    </div>
+    <p>📞 +55 (34) 98875-4146 </p>
+    <p>&copy; 2025 Musical OTONE - Todos os direitos reservados.</p>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
